@@ -27,7 +27,7 @@ const UpdateProductForm = () => {
     }
     useEffect(() => {
         singleFetchProduct()
-    }, [dispatch, singleFetchProduct, id])
+    }, [dispatch])
 
     const product = useSelector(state => state.products.singleProduct)
 

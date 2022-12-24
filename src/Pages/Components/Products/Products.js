@@ -23,14 +23,14 @@ const Products = () => {
 
     useEffect(() => {
         handleFetch()
-    }, [dispatch, handleFetch]);
+    }, [dispatch]);
 
     let products = useSelector(state => state.products.products)
     const sort = useSelector(state => state.products.sort)
 
 
 
-   
+
     const handleSortByLastUpload = () => {
         dispatch(sortByFirstLastUpload(SORT_BY_LAST_UPLOAD))
     }
@@ -50,7 +50,7 @@ const Products = () => {
 
 
         <MDBContainer className='mt-5 ' >
-          
+
             <br />
             <div className=' d-flex justify-content-end pb-5 mt-5'>
                 <MDBBtnGroup aria-label='Basic example'>
